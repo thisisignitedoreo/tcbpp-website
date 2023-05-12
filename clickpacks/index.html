@@ -38,84 +38,84 @@
 				by: BigRay</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/0/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/0/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>Sharkoon Brown Switches<br>
 				by: Sharkoon</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/1/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/1/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>BigRays Yellow Switches<br>
 				by: BigRay</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/2/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/2/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>Cool Keyboard Clickpack<br>
 				by: feet</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/3/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/3/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>Random Clickpack #1<br>
 				by: ???</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/4/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/4/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>Neon Clickpack<br>
 				by: Neon</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/5/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/5/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>SR3 Clickpack<br>
 				by: SR3</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/6/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/6/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>Random Clickpack #2<br>
 				by: ???</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/7/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/7/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>GPro Clickpack<br>
 				by: GPro</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/8/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/8/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>Calculator Clickpack<br>
 				by: ???</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/9/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/9/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>Fart Clickpack<br>
 				by: ???</h3>
 				<h4>Taken from ZCB server.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/10/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/10/clickpack.zip">Download</a>
 			</div>
 			<div class="grid-item">
 				<h3>Ayrelia Clickpack<br>
 				by: dejid</h3>
 				<h4>Sometimes noisy, almost no difference beetween hard and normal clicks, no softclicks.</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/11/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/11/clickpack.zip">Download</a>
 			</div>
 		</div>
 	</div>
@@ -125,11 +125,11 @@
 			return choices[index];
 		}
 		function play(index) {
-			fetch(`/clickpacks/${index}/data.json`)
+			fetch(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/data.json`)
 				.then((response) => response.json())
 				.then((data) => {
-					var hold = new Audio(`/clickpacks/${index}/holds/${choose(data.holds)}`)
-					var release = new Audio(`/clickpacks/${index}/releases/${choose(data.releases)}`)
+					var hold = new Audio(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/holds/${choose(data.holds)}`)
+					var release = new Audio(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/releases/${choose(data.releases)}`)
 					hold.play()
 					release.play()
 				});

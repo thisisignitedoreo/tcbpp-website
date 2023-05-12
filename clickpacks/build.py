@@ -45,10 +45,10 @@ for k, i in enumerate(data):
 				by: {i["author"]}</h3>
 				<h4>{i["description"]}</h4>
 				<a href="javascript:void" onclick="play(0)">Test</a>
-				<a href="/clickpacks/{k}/clickpack.zip">Download</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/{k}/clickpack.zip">Download</a>
 			</div>"""
 
-html += """
+html += r"""
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -57,11 +57,11 @@ html += """
 			return choices[index];
 		}
 		function play(index) {
-			fetch(`/clickpacks/$\{index\}/data.json`)
+			fetch(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/data.json`)
 				.then((response) => response.json())
 				.then((data) => {
-					var hold = new Audio(`/clickpacks/$\{index\}/holds/${choose(data.holds)}`)
-					var release = new Audio(`/clickpacks/$\{index\}/releases/${choose(data.releases)}`)
+					var hold = new Audio(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/holds/${choose(data.holds)}`)
+					var release = new Audio(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/releases/${choose(data.releases)}`)
 					hold.play()
 					release.play()
 				});
