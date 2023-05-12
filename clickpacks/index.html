@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -137,3 +138,67 @@
 	</script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tcb++ clickpack index</title>
+	<style>
+		@import url("https://raw.githubusercontent.com/source-foundry/Hack/master/build/web/hack.css");
+		* {
+			color: white;
+			font-family: "hack", monospace;
+			padding: 5px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		html {
+			background-color: #FF7700;
+		}
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			column-gap: 10px;
+			row-gap: 10px;
+		}
+		.grid-item {
+			border: solid #FF9900;
+			border-radius: 15px;
+			background-color: #FF8500;
+		}
+	</style>
+</head>
+<body>
+	<div style="text-align: center">
+		<h1>tcb++ clickpack index</h1>
+		<div class="grid">
+			<div class="grid-item">
+				<h3>BigRay's G502<br>
+				by: BigRay</h3>
+				<h4>Taken from ZCB server.</h4>
+				<a href="javascript:void" onclick="play(0)">Test</a>
+				<a href="https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/0/clickpack.zip">Download</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function choose(choices) {
+			var index = Math.floor(Math.random() * choices.length);
+			return choices[index];
+		}
+		function play(index) {
+			fetch(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/data.json`)
+				.then((response) => response.json())
+				.then((data) => {
+					var hold = new Audio(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/holds/${choose(data.holds)}`)
+					var release = new Audio(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/releases/${choose(data.releases)}`)
+					hold.play()
+					release.play()
+				});
+		}
+	</script>
+</body>
+</html>
+>>>>>>> bd4d38dad7c460d4ba402459c3524bff8e2934e1

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"holds": [
 		"1.wav",
@@ -18,4 +19,26 @@
 		"6.wav",
 		"7.wav"
 	]
+=======
+{
+	"holds": [
+		"1.wav",
+		"2.wav",
+		"3.wav",
+		"4.wav",
+		"5.wav",
+		"6.wav",
+		"7.wav",
+		"8.wav"
+	],
+	"releases": [
+		"1.wav",
+		"2.wav",
+		"3.wav",
+		"4.wav",
+		"5.wav",
+		"6.wav",
+		"7.wav"
+	]
+>>>>>>> bd4d38dad7c460d4ba402459c3524bff8e2934e1
 }
