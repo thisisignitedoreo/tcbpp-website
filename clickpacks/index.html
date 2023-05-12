@@ -48,7 +48,7 @@
 			return choices[index];
 		}
 		function play(index) {
-			fetch(`/clickpacks/${index}/data.json`)
+			fetch(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/data.json`)
 				.then((response) => response.json())
 				.then((data) => {
 					var hold = new Audio(`https://thisisignitedoreo.github.io/tcbpp-website/clickpacks/${index}/holds/${choose(data.holds)}`)
